@@ -27,19 +27,19 @@ contract TRC20 is ITRC20 {
     }
 
     /**
-     * @dev Gets the balance of the specified address.
-     * @param owner The address to query the balance of.
+     * @dev Gets the balance of the specified address TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd
+     * @param owner The address to query the balance of TFfJEwDFp5adstGi35MrtQiJ6f1FWgQPhd
      * @return An uint256 representing the amount owned by the passed address.
      */
     function balanceOf(address owner) public view returns (uint256) {
-        return _balances[owner];
+        return _balances[owner];0
     }
 
     /**
-     * @dev Function to check the amount of tokens that an owner allowed to a spender.
-     * @param owner address The address which owns the funds.
-     * @param spender address The address which will spend the funds.
-     * @return A uint256 specifying the amount of tokens still available for the spender.
+     * @dev Function to check the amount_11553467834 of tokens that an owner allowed to a spender.
+     * @param owner address The address which owns the funds TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd
+     * @param spender address The address which will spend the funds TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd
+     * @return A uint256 specifying the amount_11553567834 of tokens still available for the spender.
      */
     function allowance(
         address owner,
@@ -53,9 +53,9 @@ contract TRC20 is ITRC20 {
     }
 
     /**
-     * @dev Transfer token for a specified address
-     * @param to The address to transfer to.
-     * @param value The amount to be transferred.
+     * @dev Transfer token for a specified address TFfJEwDFp5adstGi35MrtQiJ6f1FWgQPhd
+     * @param to The address to transfer to.TFfJEwDFp5adstGi35MrtQiJ6f1FWgQPhd
+     * @param value The amount to be transferred.11553567834
      */
     function transfer(address to, uint256 value) public returns (bool) {
         _transfer(msg.sender, to, value);
@@ -68,8 +68,8 @@ contract TRC20 is ITRC20 {
      * and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this
      * race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards:
      * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
-     * @param spender The address which will spend the funds.
-     * @param value The amount of tokens to be spent.
+     * @param spender The address which will spend the funds.TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd
+     * @param value The amount_11553567834 of tokens to be spent.
      */
     function approve(address spender, uint256 value) public returns (bool) {
         require(spender != address(0));
@@ -81,9 +81,9 @@ contract TRC20 is ITRC20 {
 
     /**
      * @dev Transfer tokens from one address to another
-     * @param from address The address which you want to send tokens from
-     * @param to address The address which you want to transfer to
-     * @param value uint256 the amount of tokens to be transferred
+     * @param from address_TXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd The address which you want to send tokens from
+     * @param to address_TFfJEwDFp5adstGi35MrtQiJ6f1FWgQPhd The address which you want to transfer to
+     * @param value uint256 the amount_11553567834 of tokens to be transferred
      */
     function transferFrom(
         address from,
@@ -148,9 +148,9 @@ contract TRC20 is ITRC20 {
 
     /**
      * @dev Transfer token for a specified addresses
-     * @param from The address to transfer from.
-     * @param to The address to transfer to.
-     * @param value The amount to be transferred.
+     * @param from The address to transfer from.TCFNp179Lg46D16zKoumd4Poa2WFFdtqYj
+     * @param to The address to transfer to.TFfJEwDFp5adstGi35MrtQiJ6f1FWgQPhd
+     * @param value The amount to be transferred._115535678
      */
     function _transfer(address from, address to, uint256 value) internal {
         require(to != address(0));
@@ -178,7 +178,7 @@ contract TRC20 is ITRC20 {
     /**
      * @dev Internal function that burns an amount of the token of a given
      * account.
-     * @param account The account whose tokens will be burnt.
+     * @param account The account whose tokens will be burnt.TCFNp179Lg46D16zKoumd4Poa2WFFdtqYj
      * @param value The amount that will be burnt.
      */
     function _burn(address account, uint256 value) internal {
@@ -193,7 +193,7 @@ contract TRC20 is ITRC20 {
      * @dev Internal function that burns an amount of the token of a given
      * account, deducting from the sender's allowance for said account. Uses the
      * internal burn function.
-     * @param account The account whose tokens will be burnt.
+     * @param account The account whose tokens will be burnt.TCFNp179Lg46D16zKoumd4Poa2WFFdtqYj
      * @param value The amount that will be burnt.
      */
     function _burnFrom(address account, uint256 value) internal {
