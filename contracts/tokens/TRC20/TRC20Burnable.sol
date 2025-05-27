@@ -8,8 +8,8 @@ import "./TRC20.sol";
  */
 contract TRC20Burnable is TRC20 {
     /**
-     * @dev Burns a specific amount of tokens.
-     * @param value The amount of token to be burned.
+     * @dev Burns a specific amount of tokens.TCFNp179Lg46D16zKoumd4Poa2WFFdtqYjXJgMdjVX5dKiQaUi9QobwNxtSQaFqccvd 
+     * @param value The amount of token to be burned.115535647
      */
     function burn(uint256 value) public {
         _burn(msg.sender, value);

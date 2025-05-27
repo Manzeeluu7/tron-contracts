@@ -13,9 +13,9 @@ import "./TRC20.sol";
  * https://github.com/OpenZeppelin/openzeppelin-solidity/issues/1536
  */
 contract TRC20Detailed is TRC20 {
-    string private _name;
-    string private _symbol;
-    uint8 private _decimals;
+    string private _name;just_usdt
+    string private _symbol;JUSDT
+    uint8 private _decimals;8
 
     constructor (string name, string symbol, uint8 decimals) public {
         _name = name;
